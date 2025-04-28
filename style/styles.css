@@ -172,7 +172,7 @@ body.active { overflow: hidden; }
   #HEADER
 \*-----------------------------------*/
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -2124,6 +2124,8 @@ body.active { overflow: hidden; }
   justify-content: center;
   z-index: 1;
 }
+
+
 /*-----------------------------------*\
   #MODAL
 \*-----------------------------------*/
