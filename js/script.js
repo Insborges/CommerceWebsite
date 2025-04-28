@@ -382,9 +382,16 @@ function setupWishlistEvents() {
 
 function setupSearchBar() {
   const searchInput = document.querySelector(".search-input");
-  const searchBtn = document.querySelector(".search-btn");
+  const searchBtn = document.querySelector(".search-icon"); // Alterado para usar o ícone de pesquisa
+  const inputWrapper = document.querySelector(".input-wrapper");
 
   if (!searchInput || !searchBtn) return;
+
+  // Criar e adicionar o ícone de fechar
+  const closeIcon = document.createElement("ion-icon");
+  closeIcon.setAttribute("name", "close");
+  closeIcon.classList.add("close");
+  inputWrapper.appendChild(closeIcon);
 
   function performSearch() {
     const searchTerm = searchInput.value.trim().toLowerCase();
@@ -425,7 +432,21 @@ function setupSearchBar() {
   }
 
   // Evento de clique no botão de pesquisa
-  searchBtn.addEventListener("click", performSearch);
+  searchBtn.addEventListener("click", function () {
+    inputWrapper.classList.add("active"); // Ativa a barra de pesquisa
+    searchInput.focus(); // Foca no campo de entrada
+  });
+
+  // Evento de clique no ícone de fechar
+  closeIcon.addEventListener("click", function () {
+    inputWrapper.classList.remove("active"); // Desativa a barra de pesquisa
+    searchInput.value = ""; // Limpa o campo de entrada
+    document.querySelectorAll(".product-card").forEach((card) => {
+      card.style.display = "block"; // Mostra todos os produtos
+    });
+    const noResultsMsg = document.querySelector(".no-results-message");
+    if (noResultsMsg) noResultsMsg.remove(); // Remove a mensagem de resultados
+  });
 
   // Evento de pressionar Enter no input
   searchInput.addEventListener("keypress", function (e) {
@@ -438,10 +459,10 @@ function setupSearchBar() {
   searchInput.addEventListener("input", function () {
     if (this.value.trim() === "") {
       document.querySelectorAll(".product-card").forEach((card) => {
-        card.style.display = "block";
+        card.style.display = "block"; // Mostra todos os produtos
       });
       const noResultsMsg = document.querySelector(".no-results-message");
-      if (noResultsMsg) noResultsMsg.remove();
+      if (noResultsMsg) noResultsMsg.remove(); // Remove a mensagem de resultados
     }
   });
 }
@@ -849,4 +870,23 @@ document.addEventListener("DOMContentLoaded", function () {
   setupCartEvents();
   setupWishlistEvents();
   setupSearchBar();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const searchIcon = document.querySelector(".search-icon");
+  const closeIcon = document.querySelector(".close");
+  const inputWrapper = document.querySelector(".input-wrapper");
+  const inputField = document.querySelector(".input-field");
+
+  searchIcon.addEventListener("click", function () {
+    inputWrapper.classList.add("active"); // Ativa a barra de pesquisa
+    inputField.classList.add("active"); // Exibe o campo de entrada
+    inputField.focus(); // Foca no campo de entrada
+  });
+
+  closeIcon.addEventListener("click", function () {
+    inputWrapper.classList.remove("active"); // Desativa a barra de pesquisa
+    inputField.classList.remove("active"); // Oculta o campo de entrada
+    inputField.value = ""; // Limpa o campo de entrada
+  });
 });
