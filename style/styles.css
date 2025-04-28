@@ -2740,3 +2740,9 @@ body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
 }
+
+@media (min-width: 768px) {
+  .testimonial-card {
+    min-width: calc(33.333% - 14px); /* Exibe 3 cartões em telas maiores */
+  }
+}

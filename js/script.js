@@ -890,3 +890,28 @@ document.addEventListener("DOMContentLoaded", function () {
     inputField.value = ""; // Limpa o campo de entrada
   });
 });
+
+
+const testimonials = document.querySelectorAll(".testimonial-card");
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
+let currentIndex = 0;
+
+function showTestimonial(index) {
+  testimonials.forEach((card, i) => {
+    card.style.transform = `translateX(${(i - index) * 100}%)`;
+  });
+}
+
+prevBtn.addEventListener("click", () => {
+  currentIndex = currentIndex > 0 ? currentIndex - 1 : testimonials.length - 1;
+  showTestimonial(currentIndex);
+});
+
+nextBtn.addEventListener("click", () => {
+  currentIndex = currentIndex < testimonials.length - 1 ? currentIndex + 1 : 0;
+  showTestimonial(currentIndex);
+});
+
+// Inicializa a exibição do primeiro testemunho
+showTestimonial(currentIndex);
