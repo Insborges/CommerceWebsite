@@ -2661,22 +2661,6 @@ body.active {
   }
 }
 
-@media (max-width: 768px) {
-  .testimonial-grid {
-    flex-direction: column;
-  }
-  
-  .testimonial-card {
-    flex: 0 0 100%;
-    margin-bottom: 20px;
-  }
-  
-  .testimonial-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-  }
-}
 
 @media (max-width: 768px) {
   .footer-top {
