@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- primary meta tag -->
+    <title>eMattressOutlet.com/produtos</title>
+    <meta name="title" content="eMattressOutlet.com" />
+    <meta
+      name="description"
+      content="This is a store where sleeping is your confort"
+    />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style/styles.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header" data-header>
+      <div class="container">
+        <div class="input-wrapper">
+          <ion-icon name="search-outline"></ion-icon>
+          <input
+            type="search"
+            name="search"
+            placeholder="Search Anything..."
+            class="input-field"
+          />
+        </div>
+
+        <a href="index.html" class="logo">
+          <img
+            src="assets/imagem_2025-04-24_212527909-removebg-preview.png"
+            alt="eMattressOutlet Logo"
+          />
+        </a>
+
+        <div class="header-action">
+          <button class="header-action-btn login-btn" aria-label="user">
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="header-action-btn wishlist-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="btn-badge"></span>
+            <span class="btn-badge">0</span>
+          </button>
+
+          <button class="header-action-btn bagage-btn" aria-label="cart">
+            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+            <span class="btn-badge">0</span>
+          </button>
+
+          <button
+            class="header-action-btn"
+            aria-label="open menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar" data-navbar>
+      <div class="sidebar-header">
+        <img
+          src="assets/imagem_2025-04-24_212527909-removebg-preview.png"
+          alt="eMattressOutlet Logo"
+        />
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-content">
+        <!-- Main Navigation -->
+        <div class="sidebar-section">
+          <h3 class="section-title">Navigations</h3>
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#shopbycategory" class="nav-link" data-nav-link
+                  >Shop by Category</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#todaystopdeals" class="nav-link" data-nav-link
+                  >Today's Top Deals</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#mattresses" class="nav-link" data-nav-link
+                  >Mattresses</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#bedding" class="nav-link" data-nav-link>Bedding</a>
+              </li>
+              <li class="nav-item">
+                <a href="product.html" class="nav-link" data-nav-link>Beds</a>
+              </li>
+              <li class="nav-item">
+                <a href="#bedbases" class="nav-link" data-nav-link>Bed Bases</a>
+              </li>
+              <li class="nav-item">
+                <a href="#furnitureandmore" class="nav-link" data-nav-link
+                  >Furniture & More</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#paymentplans" class="nav-link" data-nav-link
+                  >Payment Plans</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#MatrressQuiz" class="nav-link" data-nav-link
+                  >Mattress Quiz</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Secondary Navigation -->
+        <div class="sidebar-section">
+          <h3 class="section-title">Informations</h3>
+          <nav class="secondary-nav">
+            <ul class="nav-list">
+              <li class="nav-item highlight">
+                <a href="#myaccount" class="nav-link" data-nav-link
+                  >My Account</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link" data-nav-link>About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#blog" class="nav-link" data-nav-link>Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="#newsletter" class="nav-link" data-nav-link>Support</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Footer with shadow divider -->
+      <div class="sidebar-footer-divider"></div>
+
+      <div class="sidebar-footer">
+        <div class="footer-content">
+          <!-- Contact Section -->
+          <div class="contact-section">
+            <h3 class="footer-section-title">CONTACT US</h3>
+            <div class="contact-info-footer">
+              <a href="mailto:support@emattressoutlet.com" class="contact-item">
+                <ion-icon name="mail-outline" class="contact-icon"></ion-icon>
+                <span>support@emattressoutlet.com</span>
+              </a>
+              <a href="tel:8552011533" class="contact-item">
+                <ion-icon name="call-outline" class="contact-icon"></ion-icon>
+                <span>855-201-1533</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="social-section">
+            <h3 class="footer-section-title">FOLLOW US</h3>
+            <div class="social-links-footer">
+              <a
+                href="https://www.facebook.com/people/Emattress-Outlet/61559474578674/"
+                class="social-link-footer"
+                aria-label="Facebook"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+              <a href="https://www.instagram.com/emattressoutlet/" class="social-link-footer" aria-label="Instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="https://www.instagram.com/emattressoutlet/" class="social-link-footer" aria-label="Twitter">
+                <svg class="x-icon" viewBox="0 0 24 24">
+                  <path
+                    d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/emattressoutlet/" class="social-link-footer" aria-label="LinkedIn">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <!-- Copyright -->
+          <div class="copyright-section">
+            <p class="copyright-text">© 2025 eMattressOutlet.com</p>
+            <p class="rights-text">All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay" data-overlay data-nav-toggler></div>
+
+    <main>
+      <article>
+        <div class="product-page">
+          <div class="container">
+            <div class="product-page-container">
+              <!-- Filtros no lado esquerdo -->
+              <div class="product-filters">
+                <!-- Size Filter -->
+                <div class="filter-group active">
+                  <button class="filter-btn">
+                    Size <ion-icon name="chevron-down-outline"></ion-icon>
+                  </button>
+                  <div class="filter-dropdown">
+                    <label
+                      ><input type="checkbox" name="size" value="queen" />
+                      Queen</label
+                    >
+                    <label
+                      ><input type="checkbox" name="size" value="twin" />
+                      Twin</label
+                    >
+                    <label
+                      ><input type="checkbox" name="size" value="split-king" />
+                      Split King</label
+                    >
+                    <label
+                      ><input type="checkbox" name="size" value="short-queen" />
+                      Short Queen</label
+                    >
+                    <label
+                      ><input type="checkbox" name="size" value="short-king" />
+                      Short King</label
+                    >
+                    <label
+                      ><input type="checkbox" name="size" value="queen-king" />
+                      Queen/King</label
+                    >
+                    <label
+                      ><input type="checkbox" name="size" value="futon-full" />
+                      Futon Full</label
+                    >
+                    <div class="filter-actions">
+                      <button class="filter-apply">Apply</button>
+                      <button class="filter-reset">Reset</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pricing Filter -->
+                <div class="filter-group">
+                  <button class="filter-btn">
+                    Pricing <ion-icon name="chevron-down-outline"></ion-icon>
+                  </button>
+                  <div class="filter-dropdown">
+                    <label
+                      ><input type="radio" name="price" value="19-69" /> $19 to
+                      $69</label
+                    >
+                    <label
+                      ><input type="radio" name="price" value="69-149" /> $69 to
+                      $149</label
+                    >
+                    <label
+                      ><input type="radio" name="price" value="149-499" />
+                      $149 to $499</label
+                    >
+                    <label
+                      ><input type="radio" name="price" value="499-999" /> $499 to
+                      $999</label
+                    >
+                    <label
+                      ><input type="radio" name="price" value="999-1999" /> $999 to
+                      $1999</label
+                    >
+                    <div class="filter-actions">
+                      <button class="filter-apply">Apply</button>
+                      <button class="filter-reset">Reset</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Order By Filter -->
+                <div class="filter-group">
+                  <button class="filter-btn">
+                    Order By <ion-icon name="chevron-down-outline"></ion-icon>
+                  </button>
+                  <div class="filter-dropdown">
+                    <label
+                      ><input type="radio" name="order" value="none" />
+                      None</label
+                    >
+                    <label><input type="radio" name="order" value="id" /> ID</label>
+                    <label
+                      ><input type="radio" name="order" value="date" /> Date</label
+                    >
+                    <label
+                      ><input type="radio" name="order" value="name" /> Name</label
+                    >
+                    <label
+                      ><input type="radio" name="order" value="title" />
+                      Title</label
+                    >
+                    <label
+                      ><input type="radio" name="order" value="comment-count" />
+                      Comment Count</label
+                    >
+                    <label
+                      ><input type="radio" name="order" value="random" />
+                      Random</label
+                    >
+                    <label
+                      ><input type="radio" name="order" value="featured" />
+                      Featured</label
+                    >
+                    <label
+                      ><input type="radio" name="order" value="product-price" />
+                      Product Price</label
+                    >
+                    <label
+                      ><input type="radio" name="order" value="top-seller" /> Top
+                      Seller</label
+                    >
+                    <label
+                      ><input type="radio" name="order" value="top-rater" /> Top
+                      Rater</label
+                    >
+                    <div class="filter-actions">
+                      <button class="filter-apply">Apply</button>
+                      <button class="filter-reset">Reset</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Sort By Filter -->
+                <div class="filter-group">
+                  <button class="filter-btn">
+                    Sort By <ion-icon name="chevron-down-outline"></ion-icon>
+                  </button>
+                  <div class="filter-dropdown">
+                    <label
+                      ><input type="radio" name="sort" value="a-z" /> A to
+                      Z</label
+                    >
+                    <label
+                      ><input type="radio" name="sort" value="z-a" /> Z to A</label
+                    >
+                    <div class="filter-actions">
+                      <button class="filter-apply">Apply</button>
+                      <button class="filter-reset">Reset</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Conteúdo do Produto -->
+              <div class="product-content">
+                <!-- Grid de Produtos -->
+                <div class="product-grid">
+                  <!-- Produto 1 -->
+                  <div class="product-card">
+                    <div
+                      class="card-banner img-holder has-before"
+                      style="--width: 300; --height: 300"
+                    >
+                      <img
+                        src="assets/bed-6830011_1280.jpg"
+                        width="300"
+                        height="300"
+                        loading="lazy"
+                        class="img-cover"
+                      />
+
+                      <!-- Apenas o coração no canto direito -->
+                      <button
+                        class="wishlist-btn"
+                        aria-label="Adicionar aos favoritos"
+                      >
+                        <ion-icon
+                          name="heart-outline"
+                          class="heart-icon"
+                        ></ion-icon>
+                        <ion-icon name="heart" class="heart-filled-icon"></ion-icon>
+                      </button>
+                    </div>
+
+                    <div class="card-content">
+                      <h3 class="product-title">Premium Comfort Bed</h3>
+                      <div class="product-price">$599.00</div>
+
+                      <div class="product-details">
+                        <div class="detail-item">
+                          <span class="detail-label">Size:</span>
+                          <span class="detail-value">Queen</span>
+                        </div>
+                        <div class="detail-item">
+                          <span class="detail-label">Material:</span>
+                          <span class="detail-value">Solid Wood, Memory Foam</span>
+                        </div>
+                      </div>
+
+                      <p class="product-description">
+                        Premium comfort bed with solid wood construction and
+                        high-density memory foam.
+                      </p>
+
+                      <button class="buy-btn" data-product-id="1">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Produto 2 -->
+                  <div class="product-card">
+                    <div
+                      class="card-banner img-holder has-before"
+                      style="--width: 300; --height: 300"
+                    >
+                      <img
+                        src="assets/bed-1839184_1280.jpg"
+                        width="300"
+                        height="300"
+                        loading="lazy"
+                        class="img-cover"
+                      />
+
+                      <!-- Apenas o coração no canto direito -->
+                      <button
+                        class="wishlist-btn"
+                        aria-label="Adicionar aos favoritos"
+                      >
+                        <ion-icon
+                          name="heart-outline"
+                          class="heart-icon"
+                        ></ion-icon>
+                        <ion-icon name="heart" class="heart-filled-icon"></ion-icon>
+                      </button>
+                    </div>
+                    <div class="card-content">
+                      <h3 class="product-title">Luxury Memory Foam Mattress</h3>
+                      <div class="product-price">$899.00</div>
+
+                      <div class="product-details">
+                        <div class="detail-item">
+                          <span class="detail-label">Size:</span>
+                          <span class="detail-value">King</span>
+                        </div>
+                        <div class="detail-item">
+                          <span class="detail-label">Material:</span>
+                          <span class="detail-value">Gel Memory Foam</span>
+                        </div>
+                      </div>
+
+                      <p class="product-description">
+                        12-inch gel memory foam mattress with cooling technology for
+                        optimal comfort.
+                      </p>
+
+                      <button class="buy-btn" data-product-id="2">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Produto 3 -->
+                  <div class="product-card">
+                    <div
+                      class="card-banner img-holder has-before"
+                      style="--width: 300; --height: 300"
+                    >
+                      <img
+                        src="assets/bed-1839183_1280.jpg"
+                        width="300"
+                        height="300"
+                        loading="lazy"
+                        class="img-cover"
+                      />
+
+                      <!-- Apenas o coração no canto direito -->
+                      <button
+                        class="wishlist-btn"
+                        aria-label="Adicionar aos favoritos"
+                      >
+                        <ion-icon
+                          name="heart-outline"
+                          class="heart-icon"
+                        ></ion-icon>
+                        <ion-icon name="heart" class="heart-filled-icon"></ion-icon>
+                      </button>
+                    </div>
+
+                    <div class="card-content">
+                      <h3 class="product-title">Orthopedic Memory Pillow</h3>
+                      <div class="product-price">$49.99</div>
+
+                      <div class="product-details">
+                        <div class="detail-item">
+                          <span class="detail-label">Size:</span>
+                          <span class="detail-value">Standard</span>
+                        </div>
+                        <div class="detail-item">
+                          <span class="detail-label">Material:</span>
+                          <span class="detail-value">Memory Foam</span>
+                        </div>
+                      </div>
+
+                      <p class="product-description">
+                        Ergonomic pillow designed to support neck and spine
+                        alignment.
+                      </p>
+
+                      <button class="buy-btn" data-product-id="3">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Produto 4 -->
+                  <div class="product-card">
+                    <div
+                      class="card-banner img-holder has-before"
+                      style="--width: 300; --height: 300"
+                    >
+                      <img
+                        src="assets/bedroom-5664221_1280.jpg"
+                        width="300"
+                        height="300"
+                        loading="lazy"
+                        class="img-cover"
+                      />
+
+                      <!-- Apenas o coração no canto direito -->
+                      <button
+                        class="wishlist-btn"
+                        aria-label="Adicionar aos favoritos"
+                      >
+                        <ion-icon
+                          name="heart-outline"
+                          class="heart-icon"
+                        ></ion-icon>
+                        <ion-icon name="heart" class="heart-filled-icon"></ion-icon>
+                      </button>
+                    </div>
+
+                    <div class="card-content">
+                      <h3 class="product-title">Modern Platform Bed Frame</h3>
+                      <div class="product-price">$349.00</div>
+
+                      <div class="product-details">
+                        <div class="detail-item">
+                          <span class="detail-label">Size:</span>
+                          <span class="detail-value">Queen</span>
+                        </div>
+                        <div class="detail-item">
+                          <span class="detail-label">Material:</span>
+                          <span class="detail-value">Solid Wood, Metal</span>
+                        </div>
+                      </div>
+
+                      <p class="product-description">
+                        Sleek platform bed frame with sturdy wooden slats, no box
+                        spring needed.
+                      </p>
+
+                      <button class="buy-btn" data-product-id="4">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Produto 5 -->
+                  <div class="product-card">
+                    <div
+                      class="card-banner img-holder has-before"
+                      style="--width: 300; --height: 300"
+                    >
+                      <img
+                        src="assets/bedroom-5772286_1280.jpg"
+                        width="300"
+                        height="300"
+                        loading="lazy"
+                        class="img-cover"
+                      />
+
+                      <!-- Apenas o coração no canto direito -->
+                      <button
+                        class="wishlist-btn"
+                        aria-label="Adicionar aos favoritos"
+                      >
+                        <ion-icon
+                          name="heart-outline"
+                          class="heart-icon"
+                        ></ion-icon>
+                        <ion-icon name="heart" class="heart-filled-icon"></ion-icon>
+                      </button>
+                    </div>
+
+                    <div class="card-content">
+                      <h3 class="product-title">Hybrid Spring Mattress</h3>
+                      <div class="product-price">$749.00</div>
+
+                      <div class="product-details">
+                        <div class="detail-item">
+                          <span class="detail-label">Size:</span>
+                          <span class="detail-value">Split King</span>
+                        </div>
+                        <div class="detail-item">
+                          <span class="detail-label">Material:</span>
+                          <span class="detail-value"
+                            >Pocket Springs, Memory Foam</span
+                          >
+                        </div>
+                      </div>
+
+                      <p class="product-description">
+                        Hybrid mattress combining pocket springs with memory foam
+                        for perfect support.
+                      </p>
+
+                      <button class="buy-btn" data-product-id="5">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Produto 6 -->
+                  <div class="product-card">
+                    <div
+                      class="card-banner img-holder has-before"
+                      style="--width: 300; --height: 300"
+                    >
+                      <img
+                        src="assets/bedroom-6778193_1280.jpg"
+                        width="300"
+                        height="300"
+                        loading="lazy"
+                        class="img-cover"
+                      />
+
+                      <!-- Apenas o coração no canto direito -->
+                      <button
+                        class="wishlist-btn"
+                        aria-label="Adicionar aos favoritos"
+                      >
+                        <ion-icon
+                          name="heart-outline"
+                          class="heart-icon"
+                        ></ion-icon>
+                        <ion-icon name="heart" class="heart-filled-icon"></ion-icon>
+                      </button>
+                    </div>
+
+                    <div class="card-content">
+                      <h3 class="product-title">Luxury Bamboo Bedding Set</h3>
+                      <div class="product-price">$129.99</div>
+
+                      <div class="product-details">
+                        <div class="detail-item">
+                          <span class="detail-label">Size:</span>
+                          <span class="detail-value">King</span>
+                        </div>
+                        <div class="detail-item">
+                          <span class="detail-label">Material:</span>
+                          <span class="detail-value">Bamboo Fiber</span>
+                        </div>
+                      </div>
+
+                      <p class="product-description">
+                        Ultra-soft bamboo fiber bedding set with temperature
+                        regulation.
+                      </p>
+
+<button class="buy-btn" data-product-id="unique-id">
+  <ion-icon name="bag-handle-outline"></ion-icon>
+  Add to Cart
+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </main>
+
+      <!-- Cart Modal -->
+      <div class="modal" id="cartModal">
+        <div class="modal-content cart-modal-content">
+          <div class="cart-modal-header">
+            <h3 class="modal-title">Your Cart</h3>
+            <button class="modal-close-btn" aria-label="Close cart">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+          
+          <div class="cart-items-container">
+            <!-- Itens serão inseridos aqui -->
+            <div class="empty-cart-message">
+              <p>Your cart is empty</p>
+            </div>
+          </div>
+          
+          <div class="cart-footer" style="display: none;">
+            <button class="btn clear-cart-btn">Clear All</button>
+            <button class="btn checkout-btn">Checkout</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Substituir o modal existente por este -->
+<div class="modal" id="confirmationModal">
+  <div class="modal-content">
+    <h3 class="modal-title">Add to Cart</h3>
+    <p></p> <!-- O texto será preenchido pelo JavaScript -->
+    <div class="modal-buttons">
+      <button class="modal-btn confirm">Yes, Add It</button>
+      <button class="modal-btn cancel">Cancel</button>
+    </div>
+  </div>
+</div>
+<style>
+  .btn-badge.animate {
+    animation: pulse 0.5s ease-in-out;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+</style>
+
+      <!-- Scripts -->
+<!-- No final do <body> -->
+<script src="js/script.js" defer></script>
+<!-- Ionicons depois do seu script -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+  </html>

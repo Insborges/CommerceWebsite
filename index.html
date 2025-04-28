@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <!-- 
+    - primary meta tag
+  -->
+    <title>eMattressOutlet.com</title>
+    <meta name="title" content="eMattressOutlet.com" />
+    <meta
+      name="description"
+      content="This is a store where sleeping is your confort"
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="style/styles.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <div class="input-wrapper">
+          <ion-icon name="search-outline"></ion-icon>
+          <input
+            type="search"
+            name="search"
+            placeholder="Search Anything..."
+            class="input-field"
+          />
+        </div>
+
+        <a href="index.html" class="logo">
+          <img
+            src="assets/imagem_2025-04-24_212527909-removebg-preview.png"
+            alt="eMattressOutlet Logo"
+          />
+        </a>
+
+        <div class="header-action">
+          <button class="header-action-btn login-btn" aria-label="user">
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="header-action-btn wishlist-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="btn-badge"></span>
+            <span class="btn-badge">0</span>
+          </button>
+
+          <button class="header-action-btn bagage-btn" aria-label="cart">
+            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>
+
+          <button
+            class="header-action-btn"
+            aria-label="open menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" data-navbar>
+      <div class="sidebar-header">
+        <img
+          src="assets/imagem_2025-04-24_212527909-removebg-preview.png"
+          alt="eMattressOutlet Logo"
+        />
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-content">
+        <!-- Main Navigation -->
+        <div class="sidebar-section">
+          <h3 class="section-title">Navigations</h3>
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#shopbycategory" class="nav-link" data-nav-link
+                  >Shop by Category</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#todaystopdeals" class="nav-link" data-nav-link
+                  >Today's Top Deals</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#mattresses" class="nav-link" data-nav-link
+                  >Mattresses</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#bedding" class="nav-link" data-nav-link>Bedding</a>
+              </li>
+              <li class="nav-item">
+                <a href="product.html" class="nav-link" data-nav-link>Beds</a>
+              </li>
+              <li class="nav-item">
+                <a href="#bedbases" class="nav-link" data-nav-link>Bed Bases</a>
+              </li>
+              <li class="nav-item">
+                <a href="#furnitureandmore" class="nav-link" data-nav-link
+                  >Furniture & More</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#paymentplans" class="nav-link" data-nav-link
+                  >Payment Plans</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#MatrressQuiz" class="nav-link" data-nav-link
+                  >Mattress Quiz</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Secondary Navigation -->
+        <div class="sidebar-section">
+          <h3 class="section-title">Informations</h3>
+          <nav class="secondary-nav">
+            <ul class="nav-list">
+              <li class="nav-item highlight">
+                <a href="#myaccount" class="nav-link" data-nav-link
+                  >My Account</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link" data-nav-link>About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#blog" class="nav-link" data-nav-link>Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="#newsletter" class="nav-link" data-nav-link>Support</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Footer with shadow divider -->
+      <div class="sidebar-footer-divider"></div>
+
+      <div class="sidebar-footer">
+        <div class="footer-content">
+          <!-- Contact Section -->
+          <div class="contact-section">
+            <h3 class="footer-section-title">CONTACT US</h3>
+            <div class="contact-info-footer">
+              <a href="mailto:support@emattressoutlet.com" class="contact-item">
+                <ion-icon name="mail-outline" class="contact-icon"></ion-icon>
+                <span>support@emattressoutlet.com</span>
+              </a>
+              <a href="tel:8552011533" class="contact-item">
+                <ion-icon name="call-outline" class="contact-icon"></ion-icon>
+                <span>855-201-1533</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="social-section">
+            <h3 class="footer-section-title">FOLLOW US</h3>
+            <div class="social-links-footer">
+              <a
+                href="https://www.facebook.com/people/Emattress-Outlet/61559474578674/"
+                class="social-link-footer"
+                aria-label="Facebook"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+              <a href="https://www.instagram.com/emattressoutlet/" class="social-link-footer" aria-label="Instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="https://www.instagram.com/emattressoutlet/" class="social-link-footer" aria-label="Twitter">
+                <svg class="x-icon" viewBox="0 0 24 24">
+                  <path
+                    d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/emattressoutlet/" class="social-link-footer" aria-label="LinkedIn">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <!-- Copyright -->
+          <div class="copyright-section">
+            <p class="copyright-text">© 2025 eMattressOutlet.com</p>
+            <p class="rights-text">All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay" data-overlay data-nav-toggler></div>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" id="home" aria-label="home">
+          <div class="container">
+            <ul class="hero-list">
+              <!-- Primeira linha -->
+              <li class="col-6">
+                <div class="hero-card">
+                  <figure class="card-banner">
+                    <img
+                      src="assets/bed-6830011_1280.jpg"
+                      alt="Shop By Category"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <h3><a href="#" class="card-title">Shop By Category</a></h3>
+                    <p class="card-text">Beds, Furniture, etc</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="col-6">
+                <div class="hero-card">
+                  <figure class="card-banner">
+                    <img
+                      src="assets/bed-1839183_1280.jpg"
+                      alt="Today's Top Deals"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <h3>
+                      <a href="#" class="card-title">Today's Top Deals</a>
+                    </h3>
+                    <p class="card-text">Discounts</p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Segunda linha -->
+              <li class="col-12">
+                <div class="hero-card">
+                  <figure class="card-banner">
+                    <img
+                      src="assets/bedroom-5664221_1280.jpg"
+                      alt="Beds"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <h3><a href="#" class="card-title">Beds</a></h3>
+                    <p class="card-text">Multiple Beds</p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Terceira linha -->
+              <li class="col-4">
+                <div class="hero-card">
+                  <figure class="card-banner">
+                    <img
+                      src="assets/matresses-imagem-hero.avif"
+                      alt="Matresses"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <h3><a href="#" class="card-title">Matresses</a></h3>
+                    <p class="card-text">Comfort</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="col-4">
+                <div class="hero-card">
+                  <figure class="card-banner">
+                    <img
+                      src="assets/bedding-imagem-hero.avif"
+                      alt="Bedding"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <h3><a href="#" class="card-title">Bedding</a></h3>
+                    <p class="card-text">For Beds</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="col-4">
+                <div class="hero-card">
+                  <figure class="card-banner">
+                    <img
+                      src="assets/bedBases-imagem-hero.avif"
+                      alt="Bed Bases"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <h3><a href="#" class="card-title">Bed Bases</a></h3>
+                    <p class="card-text">For Beds</p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Quarta linha -->
+              <li class="col-12">
+                <div class="hero-card">
+                  <figure class="card-banner">
+                    <img
+                      src="assets/furniture-image-hero_option2.PNG"
+                      alt="Furniture & More"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <h3><a href="#" class="card-title">Furniture & More</a></h3>
+                    <p class="card-text">Decoration</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- #ABOUT -->
+        <section class="section about" id="about" aria-label="about">
+          <div class="about-bg">
+            <div class="about-overlay"></div>
+          </div>
+
+          <div class="container">
+            <div class="about-header">
+              <h2 class="section-title">About Us</h2>
+              <span class="about-subtitle"
+                >Our commitment extends beyond the quality of our products</span
+              >
+            </div>
+
+            <p class="section-text">
+              As an eco-friendly company, we take pride in offering a
+              sustainable solution for your bedding needs. When you choose to
+              buy a mattress from us, you're not just investing in a good
+              night's sleep; you're making a conscious choice to contribute to
+              environmental preservation.
+            </p>
+
+            <a href="#" class="btn btn-outline">Explore More</a>
+          </div>
+        </section>
+
+        <section class="section testimonials">
+          <div class="testimonial-wrapper">
+            <button class="testimonial-btn prev">❮</button>
+            <div class="testimonial-container">
+              <h2 class="section-title">What People Say</h2>
+              <div class="testimonial-grid" id="testimonial-grid">
+                <!-- Testimonial Cards -->
+                <div class="testimonial-card">
+                  <div class="testimonial-avatar">
+                    <img src="assets/user.png" alt="Customer avatar" />
+                  </div>
+                  <div class="testimonial-rating">★★★★★</div>
+                  <p class="testimonial-text">
+                    "The most comfortable mattress I've ever slept on! Worth
+                    every penny."
+                  </p>
+                  <p class="testimonial-author">- Sarah Johnson</p>
+                </div>
+
+                <div class="testimonial-card">
+                  <div class="testimonial-avatar">
+                    <img src="assets/user.png" alt="Customer avatar" />
+                  </div>
+                  <div class="testimonial-rating">★★★★☆</div>
+                  <p class="testimonial-text">
+                    "Great customer service and fast delivery. Improved my sleep
+                    quality."
+                  </p>
+                  <p class="testimonial-author">- Michael Brown</p>
+                </div>
+
+                <div class="testimonial-card">
+                  <div class="testimonial-avatar">
+                    <img src="assets/user.png" alt="Customer avatar" />
+                  </div>
+                  <div class="testimonial-rating">★★★★★</div>
+                  <p class="testimonial-text">
+                    "Exceeded expectations. Highly recommend!"
+                  </p>
+                  <p class="testimonial-author">- Emily Davis</p>
+                </div>
+
+                <div class="testimonial-card">
+                  <div class="testimonial-avatar">
+                    <img src="assets/user.png" alt="Customer avatar" />
+                  </div>
+                  <div class="testimonial-rating">★★★☆☆</div>
+                  <p class="testimonial-text">
+                    "Great customer service and fast delivery but the product
+                    isn´t great."
+                  </p>
+                  <p class="testimonial-author">- John Borges</p>
+                </div>
+
+                <!-- Adicione mais cards conforme necessário -->
+                <div class="testimonial-card">
+                  <div class="testimonial-avatar">
+                    <img src="assets/user.png" alt="Customer avatar" />
+                  </div>
+                  <div class="testimonial-rating">★★★★★</div>
+                  <p class="testimonial-text">
+                    "Amazing product quality and comfort."
+                  </p>
+                  <p class="testimonial-author">- Robert Wilson</p>
+                </div>
+
+                <div class="testimonial-card">
+                  <div class="testimonial-avatar">
+                    <img src="assets/user.png" alt="Customer avatar" />
+                  </div>
+                  <div class="testimonial-rating">★★★★★</div>
+                  <p class="testimonial-text">
+                    "Best purchase I've made this year!"
+                  </p>
+                  <p class="testimonial-author">- Jessica Lee</p>
+                </div>
+
+                <div class="testimonial-card">
+                  <div class="testimonial-avatar">
+                    <img src="assets/user.png" alt="Customer avatar" />
+                  </div>
+                  <div class="testimonial-rating">★★★★☆</div>
+                  <p class="testimonial-text">
+                    "Very satisfied with my purchase and the service."
+                  </p>
+                  <p class="testimonial-author">- David Miller</p>
+                </div>
+              </div>
+            </div>
+            <button class="testimonial-btn next">❯</button>
+          </div>
+        </section>
+
+        <!-- 
+        - #SLEP QUIZ
+      -->
+        <section class="sleep-quiz">
+          <div class="container">
+            <div class="quiz-content">
+              <div class="quiz-image">
+                <img
+                  src="assets/OtherThings/high-angle-mother-with-baby-home.jpg"
+                  alt="Person sleeping comfortably"
+                  class="img-cover"
+                />
+              </div>
+
+              <div class="quiz-text">
+                <h1 class="h2">What type of sleeper are you?</h1>
+                <p class="section-text">
+                  Find the best mattress for your needs with our quick and
+                  intuitive quiz.
+                </p>
+                <button class="btn quiz-button">
+                  <span>Take the Quiz</span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #PRODUCTS
+      -->
+
+        <section class="section-product" id="product" aria-label="product">
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">Popular Products</h2>
+              <ul class="filter-btn-list">
+                <li class="filter-btn-item">
+                  <button class="filter-btn active" data-filter-btn="all">
+                    All Products
+                  </button>
+                </li>
+                <li class="filter-btn-item">
+                  <button class="filter-btn" data-filter-btn="bed">Beds</button>
+                </li>
+                <li class="filter-btn-item">
+                  <button class="filter-btn" data-filter-btn="mattresses">
+                    Mattresses
+                  </button>
+                </li>
+                <li class="filter-btn-item">
+                  <button class="filter-btn" data-filter-btn="bedding">
+                    Bedding
+                  </button>
+                </li>
+                <li class="filter-btn-item">
+                  <button class="filter-btn" data-filter-btn="bedBases">
+                    Bed Bases
+                  </button>
+                </li>
+                <li class="filter-btn-item">
+                  <button class="filter-btn" data-filter-btn="furniture">
+                    Furniture & More
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="product-carousel-container">
+              <button class="carousel-btn prev">❮</button>
+
+              <div class="product-carousel-wrapper">
+                <ul class="product-list" data-filter="all">
+                  <li class="bedBases">
+                    <div class="product-card" data-product-id="prod5">
+                      <a
+                        href="#"
+                        class="card-banner img-holder has-before"
+                        style="--width: 300; --height: 300"
+                      >
+                        <img
+                          src="assets/BedBases/SD-Adjustable-Bed-Base-01.webp"
+                          width="300"
+                          height="300"
+                          loading="lazy"
+                          alt="Animi Dolor Pariatur"
+                          class="img-cover"
+                        />
+
+                        <ul class="card-action-list">
+                          <li>
+                            <button
+                              class="card-action-btn"
+                              aria-label="add to cart"
+                              data-product-id="unique-id"
+                            >
+                              <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                          </li>
+                          <li>
+                            <button
+                              class="card-action-btn wishlist-btn"
+                              aria-label="add to wishlist"
+                            >
+                              <ion-icon
+                                name="heart-outline"
+                                class="heart-icon"
+                              ></ion-icon>
+                              <ion-icon
+                                name="heart"
+                                class="heart-filled-icon"
+                                style="display: none"
+                              ></ion-icon>
+                            </button>
+                          </li>
+                        </ul>
+                        <ul class="badge-list">
+                          <li><div class="badge orange">Sale</div></li>
+                          <li><div class="badge cyan">-10%</div></li>
+                        </ul>
+                      </a>
+                      <div class="card-content">
+                        <h3 class="h3">
+                          <a href="#" class="card-title"
+                            >SD Adjustable Bed Base</a
+                          >
+                        </h3>
+                        <div class="card-price">
+                          <del class="del">$588.99</del>
+                          <data class="price" value="10">$399.99</data>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="bedBases">
+                    <div class="product-card" data-product-id="prod4">
+                      <a
+                        href="#"
+                        class="card-banner img-holder has-before"
+                        style="--width: 300; --height: 300"
+                      >
+                        <img
+                          src="assets/bedBases_item1.avif"
+                          width="300"
+                          height="300"
+                          loading="lazy"
+                          alt="Art Deco Home"
+                          class="img-cover"
+                        />
+
+                        <ul class="card-action-list">
+                          <li>
+                            <button
+                              class="card-action-btn"
+                              aria-label="add to cart"
+                              data-product-id="unique-id"
+                            >
+                              <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                          </li>
+                          <li>
+                            <button
+                              class="card-action-btn wishlist-btn"
+                              aria-label="add to wishlist"
+                            >
+                              <ion-icon
+                                name="heart-outline"
+                                class="heart-icon"
+                              ></ion-icon>
+                              <ion-icon
+                                name="heart"
+                                class="heart-filled-icon"
+                                style="display: none"
+                              ></ion-icon>
+                            </button>
+                          </li>
+                        </ul>
+                        <div class="card-badge">Out of Stock</div>
+                      </a>
+                      <div class="card-content">
+                        <h3 class="h3">
+                          <a href="#" class="card-title">White Bed Base</a>
+                        </h3>
+                        <div class="card-price">
+                          <data class="price" value="30">$199.99</data>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="bed">
+                    <div class="product-card" data-product-id="prod3">
+                      <a
+                        href="#"
+                        class="card-banner img-holder has-before"
+                        style="--width: 300; --height: 300"
+                      >
+                        <img
+                          src="assets/Beds/Cersi_Upholstered_Platform_Bed.webp"
+                          width="300"
+                          height="300"
+                          loading="lazy"
+                          alt="Artificial potted plant"
+                          class="img-cover"
+                        />
+
+                        <ul class="card-action-list">
+                          <li>
+                            <button
+                              class="card-action-btn"
+                              aria-label="add to cart"
+                              data-product-id="unique-id"
+                            >
+                              <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                          </li>
+                          <li>
+                            <button
+                              class="card-action-btn wishlist-btn"
+                              aria-label="add to wishlist"
+                            >
+                              <ion-icon
+                                name="heart-outline"
+                                class="heart-icon"
+                              ></ion-icon>
+                              <ion-icon
+                                name="heart"
+                                class="heart-filled-icon"
+                                style="display: none"
+                              ></ion-icon>
+                            </button>
+                          </li>
+                        </ul>
+                      </a>
+                      <div class="card-content">
+                        <h3 class="h3">
+                          <a href="#" class="card-title"
+                            >Cersi Upholstered Platform</a
+                          >
+                        </h3>
+                        <div class="card-price">
+                          <data class="price" value="40">$999.99</data>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="furniture">
+                    <div class="product-card" data-product-id="prod2">
+                      <a
+                        href="#"
+                        class="card-banner img-holder has-before"
+                        style="--width: 300; --height: 300"
+                      >
+                        <img
+                          src="assets/Furniture&More/Parnel-Sleeper-Sofa.webp"
+                          width="300"
+                          height="300"
+                          loading="lazy"
+                          alt="Dark Green Jug"
+                          class="img-cover"
+                        />
+
+                        <ul class="card-action-list">
+                          <li>
+                            <button
+                              class="card-action-btn"
+                              aria-label="add to cart"
+                              data-product-id="unique-id"
+                            >
+                              <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                          </li>
+                          <li>
+                            <button
+                              class="card-action-btn wishlist-btn"
+                              aria-label="add to wishlist"
+                            >
+                              <ion-icon
+                                name="heart-outline"
+                                class="heart-icon"
+                              ></ion-icon>
+                              <ion-icon
+                                name="heart"
+                                class="heart-filled-icon"
+                                style="display: none"
+                              ></ion-icon>
+                            </button>
+                          </li>
+                        </ul>
+                      </a>
+                      <div class="card-content">
+                        <h3 class="h3">
+                          <a href="#" class="card-title">Parnel Sleep Sofa</a>
+                        </h3>
+                        <div class="card-price">
+                          <data class="price" value="17.10">$699.99</data>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="mattresses">
+                    <div class="product-card" data-product-id="prod1">
+                      <a
+                        href="#"
+                        class="card-banner img-holder has-before"
+                        style="--width: 300; --height: 300"
+                      >
+                        <img
+                          src="assets/Mastresses/Major-Brand-Black-Class-Mattress.webp"
+                          width="300"
+                          height="300"
+                          loading="lazy"
+                          alt="Drinking Glasses"
+                          class="img-cover"
+                        />
+
+                        <ul class="card-action-list">
+                          <li>
+                            <button
+                              class="card-action-btn"
+                              aria-label="add to cart"
+                              data-product-id="unique-id"
+                            >
+                              <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                          </li>
+                          <li>
+                            <button
+                              class="card-action-btn wishlist-btn"
+                              aria-label="add to wishlist"
+                            >
+                              <ion-icon
+                                name="heart-outline"
+                                class="heart-icon"
+                              ></ion-icon>
+                              <ion-icon
+                                name="heart"
+                                class="heart-filled-icon"
+                                style="display: none"
+                              ></ion-icon>
+                            </button>
+                          </li>
+                        </ul>
+                      </a>
+                      <div class="card-content">
+                        <h3 class="h3">
+                          <a href="#" class="card-title"
+                            >Black X-Class Mattress</a
+                          >
+                        </h3>
+                        <div class="card-price">
+                          <data class="price" value="60">$1,299.99</data>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <button class="carousel-btn next">❯</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #BLOG
+      -->
+
+        <section class="section blog" id="blog" aria-label="blog">
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">Your sleep has an impact</h2>
+
+              <a
+                href="https://www.instagram.com/emattressoutlet/"
+                target="_blank"
+                class="btn-link"
+              >
+                <span class="span">View All</span>
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+
+            <ul class="grid-list">
+              <li>
+                <a
+                  href="https://www.instagram.com/p/DIwacC9MYRk/"
+                  class="blog-card"
+                >
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 374; --height: 400"
+                  >
+                    <img
+                      src="assets/social_media/earth_day_post.jpg"
+                      width="374"
+                      height="400"
+                      loading="lazy"
+                      alt="Unique products that will impress your home in 2022."
+                      class="img-cover"
+                    />
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/p/DImHQJ-oHL3/"
+                  class="blog-card"
+                >
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 374; --height: 400"
+                  >
+                    <img
+                      src="assets/social_media/sleeping_post.jpg"
+                      width="374"
+                      height="400"
+                      loading="lazy"
+                      alt="Navy Blue & White Striped Area Rugs"
+                      class="img-cover"
+                    />
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/p/DIeY2dCpyZC/"
+                  class="blog-card"
+                >
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 374; --height: 400"
+                  >
+                    <img
+                      src="assets/social_media/easter_day_post.jpg"
+                      width="374"
+                      height="400"
+                      loading="lazy"
+                      alt="Woodex White Coated Staircase Floating"
+                      class="img-cover"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+  - #CONTACT SECTION
+-->
+        <section class="section contact" id="contact" aria-label="contact">
+          <div class="contact-bg">
+            <div class="contact-overlay"></div>
+          </div>
+
+          <div class="container">
+            <div class="contact-header">
+              <h2 class="section-title">Contact us</h2>
+              <p class="contact-subtitle">
+                Our customer service team is ready to assist you.
+              </p>
+            </div>
+
+            <div class="contact-info">
+              <a href="mailto:support@emattressoutlet.com" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+                support@emattressoutlet.com
+              </a>
+
+              <a href="tel:8552011533" class="contact-link">
+                <ion-icon name="call-outline"></ion-icon>
+                855-201-1533
+              </a>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top section">
+          <div class="footer-brand">
+            <!-- Logo -->
+            <a href="#" class="logo">
+              <img
+                src="assets/imagem_2025-04-25_182226285-removebg-preview.png"
+                alt="eMattressOutlet Logo"
+              />
+            </a>
+
+            <!-- Container redes sociais -->
+            <div class="social-container">
+              <p class="social-title">Connect with us:</p>
+
+              <ul class="social-list">
+                <li>
+                  <a
+                    href="https://www.facebook.com/people/Emattress-Outlet/61559474578674/"
+                    class="social-link"
+                  >
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/emattressoutlet/"
+                    class="social-link"
+                  >
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://x.com/eMattressOutlet"
+                    class="social-link"
+                    aria-label="Twitter"
+                  >
+                    <svg class="x-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="www.linkedin.com/company/emattress-outlet"
+                    class="social-link"
+                    aria-label="LinkedIn"
+                  >
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Support</p>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Warranty</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">About</p>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Mission</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Size Guide</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Mattress Quiz</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Payment Plans</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Newsletter</p>
+
+            <form action="" class="footer-form">
+              <div class="input-group">
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Your email address"
+                  required
+                  class="email-field"
+                />
+              </div>
+              <button type="submit" class="submit-btn">Subscribe</button>
+            </form>
+
+            <div class="wrapper">
+              <a href="#" class="footer-link">Privacy Policy</a>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2025 eMattressOutlet.com
+            <a href="#" class="copyright-link">All Rights Reserved</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- Substituir o modal existente por este -->
+    <div class="modal" id="cartModal">
+      <div class="modal-content cart-modal-content">
+        <div class="cart-modal-header">
+          <h3 class="modal-title">Your Cart</h3>
+          <button class="modal-close-btn" aria-label="Close cart">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="cart-items-container">
+          <div class="empty-cart-message">
+            <p>Your cart is empty</p>
+          </div>
+        </div>
+
+        <div class="cart-footer" style="display: none">
+          <button class="btn clear-cart-btn">Clear All</button>
+          <button class="btn checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .btn-badge.animate {
+        animation: pulse 0.5s ease-in-out;
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+
+    <!-- No final do <body> -->
+    <script src="js/script.js" defer></script>
+    <!-- Ionicons depois do seu script -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
