@@ -110,6 +110,10 @@ html {
   font-family: var(--ff-roboto);
   font-size: 10px;
   scroll-behavior: smooth;
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+  height: -webkit-fill-available;
 }
 
 body {
@@ -118,6 +122,27 @@ body {
   color: var(--black);
   font-size: 1.6rem;
   line-height: 1.7;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: visible;
 }
 
 body.active {
@@ -144,6 +169,27 @@ body.active {
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: hsl(0, 0%, 70%);
+}
+
+body::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section {
+  float: none;
+  clear: both;
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+
+.header,
+.footer {
+  width: 100vw;
+  left: 0;
+  right: 0;
 }
 
 /*-----------------------------------*\
@@ -2601,6 +2647,10 @@ body.active {
 }
 
 @media (max-width: 768px) {
+  .section,
+  .hero-list {
+    margin-top: 50px;
+  }
   .hero-list {
     grid-template-columns: 1fr;
     gap: 15px;
